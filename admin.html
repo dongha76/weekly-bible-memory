@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>암송구절 관리자</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 헤더 -->
+  <header class="main-header">
+    <h1>암송구절 관리자 페이지</h1>
+    <h2>세계로교회 매주 성경암송 관리</h2>
+  </header>
+
+  <!-- 메인 -->
+  <main>
+
+    <!-- 입력 폼 -->
+    <section id="admin-form" class="highlight-card">
+
+      <input
+        type="text"
+        id="book"
+        placeholder="성경책 이름 (예: 요한복음)"
+      />
+
+      <input
+        type="number"
+        id="chapter"
+        placeholder="장"
+      />
+
+      <input
+        type="number"
+        id="verseStart"
+        placeholder="시작절"
+      />
+
+      <input
+        type="number"
+        id="verseEnd"
+        placeholder="끝절 (선택)"
+      />
+
+      <input
+        type="date"
+        id="date"
+      />
+
+      <button id="fetch-verse">본문 조회</button>
+
+      <button id="save-json">JSON 생성</button>
+
+    </section>
+
+    <!-- API 실패 시 수동 입력 -->
+    <section
+      id="manual-content-section"
+      class="highlight-card"
+      style="display:none;"
+    >
+      <h3>본문 수동 입력 (API 실패 시)</h3>
+
+      <textarea
+        id="manual-content"
+        rows="8"
+        placeholder="본문을 직접 입력하세요"
+      ></textarea>
+    </section>
+
+    <!-- JSON 미리보기 -->
+    <section id="json-preview" class="highlight-card">
+      <h3>JSON 미리보기</h3>
+
+      <pre id="json-output"></pre>
+
+      <button id="copy-json">복사하기</button>
+    </section>
+
+  </main>
+
+  <!-- 스크립트 연결 -->
+  <script src="admin.js"></script>
+
+</body>
+</html>

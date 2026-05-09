@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>세계로교회 매주 성경암송</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 헤더 -->
+  <header class="main-header">
+    <h1>좋은 이웃! 감동을 주는 사람들</h1>
+    <h2>세계로교회 매주 성경암송</h2>
+  </header>
+
+  <!-- 메인 콘텐츠 -->
+  <main>
+
+    <!-- 이번주 암송구절 -->
+    <section id="current-memory" class="highlight-card">
+      <div class="memory-header">
+        <h3>이번주 암송구절</h3>
+        <button id="toggle-current">숨기기</button>
+      </div>
+
+      <div id="current-memory-content">
+        <p id="current-week"></p>
+        <p id="current-date"></p>
+        <h4 id="current-reference"></h4>
+        <p id="current-content"></p>
+      </div>
+    </section>
+
+    <!-- 검색 -->
+    <section id="search-section">
+      <input
+        type="text"
+        id="search-input"
+        placeholder="성경책 이름 또는 키워드 검색"
+      />
+    </section>
+
+    <!-- 아카이브 -->
+    <section id="archive-section">
+      <h3>암송 기록</h3>
+      <div id="archive-container"></div>
+    </section>
+
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="site-footer">
+    <p>제작: 세계로 교회 오경탁구역 이동하</p>
+    <p>제작일: 2026.5.9</p>
+  </footer>
+
+  <!-- 스크립트 연결 -->
+  <script src="script.js"></script>
+</body>
+</html>
