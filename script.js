@@ -33,11 +33,9 @@ function renderCurrentMemory() {
     return;
   }
 
-  document.getElementById("current-week").textContent =
-    getWeekLabel(latest.date);
-
-  document.getElementById("current-date").textContent =
-    formatDate(latest.date);
+  // 주차 + 날짜 한 줄 표시
+  document.getElementById("current-meta").textContent =
+    `${getWeekLabel(latest.date)} · ${formatDate(latest.date)}`;
 
   document.getElementById("current-reference").textContent =
     latest.reference;
