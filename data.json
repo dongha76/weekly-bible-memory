@@ -1,5 +1,14 @@
 [
  {
+  "date": "2026-05-31",
+  "book": "요한복음",
+  "chapter": 1,
+  "verseStart": 12,
+  "verseEnd": null,
+  "reference": "요한복음 1:12",
+  "content": "영접하는 자 곧 그 이름을 믿는 자들에게는 하나님의 자녀가 되는 권세를 주셨으니"
+ },
+ {
   "date": "2026-05-24",
   "book": "베드로전서",
   "chapter": 3,
