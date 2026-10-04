@@ -1,5 +1,14 @@
 [
  {
+  "date": "2026-10-04",
+  "book": "마태복음",
+  "chapter": 6,
+  "verseStart": 33,
+  "verseEnd": null,
+  "reference": "마태복음 6:33",
+  "content": "그런즉 너희는 먼저 그의 나라와 그의 의를 구하라 그리하면 이 모든 것을 너희에게 더하시리라"
+ },
+ {
   "date": "2026-09-27",
   "book": "시편",
   "chapter": 119,
